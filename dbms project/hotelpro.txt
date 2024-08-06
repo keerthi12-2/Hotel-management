@@ -1,0 +1,34 @@
+CREATE TABLE `hotelmanagement`.`customer` (
+  `Ref` INT NOT NULL,
+  `Name` VARCHAR(45) NULL,
+  `Father` VARCHAR(45) NULL,
+  `Gender` VARCHAR(45) NULL,
+  `Postcode` VARCHAR(45) NULL,
+  `Mobile` VARCHAR(45) NULL,
+  `Email` VARCHAR(45) NULL,
+  `Nationality` VARCHAR(45) NULL,
+  `Idproof` VARCHAR(45) NULL,
+  `Idnumber` VARCHAR(45) NULL,
+  `Address` VARCHAR(45) NULL,
+  PRIMARY KEY (`Ref`));
+
+CREATE TABLE `hotelmanagement`.`details` (
+  `Floor` VARCHAR(45) NULL,
+  `RoomNo` VARCHAR(45) NOT NULL,
+  `RoomType` VARCHAR(45) NULL,
+  PRIMARY KEY (`RoomNo`));
+
+CREATE TABLE `hotelmanagement`.`employee` (
+  `employeeid` INT NOT NULL,
+  `name` VARCHAR(45) NULL,
+  `father` VARCHAR(45) NULL,
+  `gender` VARCHAR(45) NULL,
+  `salary` VARCHAR(45) NULL,
+  `mobile` VARCHAR(45) NULL,
+  `email` VARCHAR(45) NULL,
+  `jobdesc` VARCHAR(45) NULL,
+  `idproof` VARCHAR(45) NULL,
+  `idnumber` VARCHAR(45) NULL,
+  `address` VARCHAR(45) NULL,
+  PRIMARY KEY (`employeeid`));
+

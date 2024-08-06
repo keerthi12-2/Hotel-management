@@ -1,0 +1,21 @@
+SELECT * FROM hotelmanagement.employee;
+SELECT c.Name,c.Father,c.Nationality
+FROM customer c
+WHERE c.Ref='1234';
+
+SELECT * FROM hotelmanagement.customer;
+SELECT customer.Name,SUM(room.noOfdays)AS total_stay_days
+FROM customer
+JOIN room on customer.Mobile=Room.contact
+where Mobile=8790654321
+group by customer.Name;
+
+select * from hotelmanagement.employee;
+select e.name,e.father,e.mobile,e.salary,e.jobdesc
+from employee e
+where salary<50000;
+
+select * from hotelmanagement.details;
+select d.room,d.floor,r.contact,r.meal
+from details s,room r
+where RoomNo='2002'
